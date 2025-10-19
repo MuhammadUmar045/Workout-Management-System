@@ -1,0 +1,73 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.pages {
+  flex: 1;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Global button styles */
+button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Global form styles */
+input, textarea, select {
+  font-family: inherit;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+*:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Loading animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid var(--primary-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-right: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pages {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pages {
+    padding: 10px;
+  }
+}
