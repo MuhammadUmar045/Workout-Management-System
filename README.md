@@ -2,7 +2,7 @@
 
 Author:
 Name: M.Umar Farooq
-Email: m.umarfarooq0045@gmail.com
+Email: mumarfarooqkhan45@gmail.com
 
 
 A full-stack workout tracking application built with the MERN stack (MongoDB, Express.js, React.js, Node.js).
